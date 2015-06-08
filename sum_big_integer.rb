@@ -1,6 +1,6 @@
-a = "999"
-b = "999"
-c = "9"
+a = "999"*10000
+b = "999"*10000
+c = "9"*1000
 
 def max_length(nums = [])
   nums.map(&:length).max
@@ -25,7 +25,6 @@ def sum(*nums)
     natural_nums = fill_up_zero(nums).map(&:reverse)
 
     current_sum, memo = sum_a_digit(natural_nums, memo, i)
-    printf "Sum of %2d %2d --> %4d, memo is %2d\n", natural_nums[0][i], natural_nums[1][i], current_sum, memo
 
     result << current_sum.to_s
   end
