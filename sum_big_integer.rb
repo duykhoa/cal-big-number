@@ -35,3 +35,21 @@ def sum(*nums)
 end
 
 p sum(a, b, c)
+
+#BENCHMARK
+
+#require 'benchmark'
+
+#Benchmark.bmbm do |x|
+  #x.report("sum 2 small digits") { sum("1"*20, "1"*20) }
+  #x.report("sum 3 small digits") { sum("1"*20, "1"*20, "9"*20) }
+
+  #x.report("sum 2 medium digits") { sum("1"*120, "1"*120) }
+  #x.report("sum 5 medium digits") { sum("1"*120, "1"*120, "9"*120, "9"*120, "9"*120) }
+  #x.report("sum 8 medium digits") { sum("1"*120, "1"*120, "9"*120, "9"*120, "9"*120, "9"*120, "9"*120, "9"*120) }
+
+  #x.report("sum 2 big digits") { sum("9"*10000, "9"*10000) }
+  #x.report("sum 8 big digits") { sum("9"*10000, "9"*10000, "9"*10000, "9"*10000, "9"*10000, "9"*10000, "9"*10000, "9"*10000) }
+
+  #x.report("sum 8 very big digits") { sum("9"*100000, "9"*100000, "9"*100000, "9"*100000, "9"*100000, "9"*100000, "9"*100000, "9"*100000) }
+#end
